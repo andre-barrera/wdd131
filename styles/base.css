@@ -58,18 +58,9 @@ header {
 
 main {
     display: flex;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
 }
 
-.card {
-    border: 0.1em solid grey;
-}
 
-.card img {
-    height: 100px;
-    width: auto;
-}
 
 footer{
     grid-area: footer;
