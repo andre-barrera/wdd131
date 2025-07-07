@@ -177,3 +177,10 @@ footer p {
     color: white;
     font-size: 1.2em;
 }
+
+/* Java Script */
+
+#lastModified {
+  color: gold;
+  font-weight: bold;
+}
