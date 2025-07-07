@@ -9,7 +9,6 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:"wdth" 100;
@@ -17,12 +16,29 @@ body {
 
 
 header {
+    display: flex;
     grid-area: header;
     min-height: 175px;
     background-color: darkslategray;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.title-bar{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.title-bar span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.title-bar h1 {
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 #course-title {
