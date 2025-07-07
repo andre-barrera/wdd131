@@ -65,11 +65,14 @@ header {
 }
 
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-rows: auto 5fr;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto 5fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto auto;
+  width: 100%;
 }
 
 main H1 {
