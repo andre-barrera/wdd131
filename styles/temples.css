@@ -50,6 +50,24 @@ nav a:hover {
     color: black;
 }
 
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+menu.open::before{
+    content: "❎";
+}
+
 main h1 {
     text-align: center;
     margin-bottom: 13px;
@@ -71,4 +89,9 @@ img {
 
 figcaption {
     font-size: small;
+}
+
+footer {
+    font-size: x-small;
+    text-align: center;
 }
