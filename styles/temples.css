@@ -32,8 +32,12 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
+}
+
+nav ul.navigation.open {
+  display: flex;
 }
 
 nav a {

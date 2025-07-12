@@ -1,12 +1,4 @@
 @media screen and  (min-width: 600px)
 {
-     nav ul {
-    display: none;
-    flex-direction: column;
-  }
-
-  nav ul.open {
-    display: flex;
-  }
     
 }
