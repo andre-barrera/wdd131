@@ -17,7 +17,7 @@ lastModified.innerHTML = `Last Modification: ${document.lastModified}`
 
 hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
-    hamButton.classList.toogle("open");
+    hamButton.classList.toggle("open");
 });
 
 
