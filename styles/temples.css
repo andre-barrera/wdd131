@@ -83,6 +83,7 @@ main h2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
+    margin: 0 auto;
 }
 
 img {
