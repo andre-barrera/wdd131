@@ -69,7 +69,7 @@ nav a:hover {
 }
 #menu.open::before {
     content: "❎";
-    font-size: 1.2;
+    font-size: 1.2rem;
 }
 
 main h1 {
