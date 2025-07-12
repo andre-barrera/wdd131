@@ -7,8 +7,6 @@ main, header, footer {
     max-width: 600px;
     margin: 0 auto;
     padding: 1rem;
-    background-color: lightblue;
-
 }
 
 body {
@@ -16,14 +14,16 @@ body {
 }
 
 header h1{
-    font-size: 1.1rem;
+    font-size: 1.8rem;
+    align-self: center;
+    color: white;
 }
 
 header {
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
-    background-color: darkcyan;
+    background-color: darkblue;
 }
 
 nav {
@@ -72,7 +72,7 @@ nav a:hover {
     font-size: 1.3rem;
 }
 
-main h1 {
+main h2 {
     text-align: center;
     margin-bottom: 13px;
     font-size: x-large;
@@ -98,4 +98,6 @@ figcaption {
 footer {
     font-size: x-small;
     text-align: center;
+    background-color: darkslateblue;
+    color: white;
 }
