@@ -9,9 +9,13 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
+.banner {
 	padding: 1rem;
 	background-color: #eee;
+    text-align: center;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    word-break: b;
 }
 
 h1 {
@@ -20,6 +24,8 @@ h1 {
 
 main {
 	display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 1.5rem;
 }
 
 h2 {
@@ -31,10 +37,15 @@ article p {
 	text-align: justify;
 }
 
-.callout {
-	color: #777;
-	background-color: #702963;
+section {
     padding: 1rem;
+}
+
+.callout {
+	color: black;
+	background-color: lightgray;
+    padding: 1rem;
+    grid-column: 1/3;
 }
 
 
@@ -42,5 +53,5 @@ footer {
 	margin-top: 1rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
-	text-align: right;
+	padding: 0.5rem 0;
 }
