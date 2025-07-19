@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*header */
+
+header{
+    display: flex;
+    background-color: #99051d;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    border-bottom:solid green 10px;
+}
+
+header h1{
+    color: white;
+}
+ /* Main */
+
+main{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+}
+
+.hero-img {
+    grid-row: 1;
+    grid-column: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: solid #99051d 5px;
+}
+
+.section1{
+    grid-row: 2;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section1 h2{
+    margin: 1rem;
+}
+
+.section2{
+    grid-row: 3;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section2 h2{
+    margin-bottom: 0;
+}
+.weather-icon{
+    justify-self: center;
+    width: 64px;
+    height: auto;
+    margin-top: 0;
+}
+
+/* Footer*/
+
+footer{
+    background-color: #99051d;
+    color: white;
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+}
