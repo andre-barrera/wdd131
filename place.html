@@ -17,7 +17,6 @@
         <section class="hero-container">
             <picture class="hero">
                 <source media="(min-width:1000px)" srcset="images/lemur-hero-la.webp">
-                <source media="(min-width: 500px)" srcset="">
                 <img class="hero-img" src="images/lemur-hero.webp" alt="Lemur image">
             </picture>
             <section class="section1">
@@ -34,10 +33,10 @@
             <section class="section2">
                 <h2>Weather</h2>
                 <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
-                <p><Strong>Temperature:</Strong> 10°C</p>
+                <p><Strong>Temperature:</Strong> <span id="temp">10°C</span></p>
                 <p><Strong>Conditions:</Strong> Partly Cloudy</p>
-                <p><Strong>Wind:</Strong> 5 km/h</p>
-                <p><Strong>Wind Chill:</Strong> 9.8°C</p>
+                <p><Strong>Wind:</Strong> <span id="windSpeed">5 km/h</span></p>
+                <p><Strong>Wind Chill:</Strong><span id="windChill"></span></p>
             </section>
         </section>
     </main>

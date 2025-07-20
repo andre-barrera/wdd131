@@ -185,5 +185,9 @@ header h1{
   height: auto;
   vertical-align: middle;
 }
+
+footer{
+    font-size: 1.25rem;
+}
     
 }
