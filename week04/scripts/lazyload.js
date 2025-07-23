@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("fade-in");
-        observer.unobserve(entry.target); // optional: stop watching once faded in
+        observer.unobserve(entry.target); 
       }
     });
   }, {
