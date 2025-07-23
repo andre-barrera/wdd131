@@ -27,10 +27,16 @@ main h1{
 main img {
     display: block;
     margin: 1rem;
-    justify-content: center;
-    justify-self: center;
-    animation: fadeFromBlack 2s ease-in-out;
-    animation-fill-mode: forwards;
+    margin: 1rem auto;
+    max-width: 400px;
+    opacity: 0;
+    filter: brightness(0);
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+main img.fade-in{
+    opacity: 1;
+    filter: brightness(1);
 }
 
 footer {
@@ -40,4 +46,9 @@ footer {
     height: 75px;
     padding: 1rem;
     align-content: center;
+    font-size: large;
+}
+
+footer p{
+    margin: 1rem;
 }
