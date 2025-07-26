@@ -8,13 +8,25 @@
 }
 
 main, header, footer {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
     padding: 1rem;
 }
 
 body {
     font-family: 'Michroma', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header / Nav */
@@ -109,7 +121,7 @@ main h2 {
 }
 
 .card h2{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 0.7rem;
 }
 

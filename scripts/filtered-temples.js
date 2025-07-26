@@ -109,15 +109,62 @@ const temples = [
 
 const container = document.querySelector('.container');
 
-temples.forEach(element => {
-    
+cardCreation(temples);
+
+// menu
+
+// Home
+const homeFilt = document.querySelector('#homeFilt');
+
+homeFilt.addEventListener("click", () => {
+  cardCreation(temples);
+})
+
+// Old
+
+const oldFilter = document.querySelector('#oldFilt');
+
+oldFilter.addEventListener("click", () => {
+  cardCreation(temples.filter(temple => parseInt(temple.dedicated.slice(0,4)) < 1900))
+});
+
+// New
+
+const newFilter = document.querySelector('#newFilt');
+
+newFilter.addEventListener("click", () => {
+  cardCreation(temples.filter(temple => parseInt(temple.dedicated.slice(0,4)) > 1900));
+});
+
+// Large
+
+const largeFilter = document.querySelector('#largeFilt');
+
+largeFilter.addEventListener("click", () => {
+  cardCreation(temples.filter(temple => temple.area > 90000))
+});
+
+// Small
+
+const smallFilter = document.querySelector('#smallFilt');
+
+smallFilter.addEventListener("click", () => {
+  cardCreation(temples.filter(temple => temple.area < 90000))
+});
+
+// Card Creation
+function cardCreation(templesFilter) {
+
+container.innerHTML = "";
+
+templesFilter.forEach(element => {
     const card = document.createElement("div");
     card.className = "card";
 
     card.innerHTML = `<h2>${element.templeName}</h2>
     
     <p><strong>Location: </strong>${element.location}</p>
-    <p><strong>Dedicated: </strong>${element.decicated}</p>
+    <p><strong>Dedicated: </strong>${element.dedicated}</p>
     <p><strong>Size: </strong>${element.area} sq ft</p>
 
     <img src="${element.imageUrl}" alt="${element.templeName}" loading="lazy">`;
@@ -125,4 +172,5 @@ temples.forEach(element => {
     container.appendChild(card);    
 });
 
+}
 
