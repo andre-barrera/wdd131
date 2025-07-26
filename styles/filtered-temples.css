@@ -36,7 +36,6 @@ header{
 
 header h1{
     color: white;
-    border: 1px solid purple;
     font-size: 2rem;
 }
 
@@ -44,12 +43,10 @@ header h1{
 
 nav{
     background-color: darkslategray;
-    border: 1px solid red;
     margin: 0 1rem 1rem 1rem;
 }
 
 nav ul{
-    border: 1px solid yellow;
     justify-self: center;
     list-style: none;
     width: 100%;
@@ -81,7 +78,6 @@ nav a:hover{
     border: none;
     height: 64px;
     width: 64px;
-    border: 1px solid red;
 }
 
 #menu::before {
