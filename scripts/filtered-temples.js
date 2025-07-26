@@ -120,7 +120,7 @@ temples.forEach(element => {
     <p><strong>Dedicated: </strong>${element.decicated}</p>
     <p><strong>Size: </strong>${element.area} sq ft</p>
 
-    <img src="${element.imageUrl}" alt="${element.templeName}">`;
+    <img src="${element.imageUrl}" alt="${element.templeName}" loading="lazy">`;
     
     container.appendChild(card);    
 });
