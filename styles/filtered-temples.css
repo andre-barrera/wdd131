@@ -4,7 +4,7 @@
 }
 
 :root {
-    --cardColor: rgba(165, 207, 176, 0.5);
+    --cardColor: rgba(165, 207, 176, 0.2);
 }
 
 main, header, footer {
@@ -100,7 +100,7 @@ main h2 {
     width: 80%;
     height: auto;
     margin: 1rem 0;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 7px 8px rgba(0, 0, 0, 0.4);
 }
 
 .card{
