@@ -30,7 +30,7 @@ header{
 .headerTop{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     align-items: center;
 }
 
@@ -40,6 +40,16 @@ header h1{
 }
 
 /* Nav */ 
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: darkslategray;
+}
+
+nav ul.navigation.open {
+  display: flex;
+}
 
 nav{
     background-color: darkslategray;
@@ -96,6 +106,7 @@ main{
 }
 
 main h2 {
+    margin: 1rem;
     text-align: center;
     margin-bottom: 13px;
     font-size: 2rem;
