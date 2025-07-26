@@ -8,26 +8,13 @@
 }
 
 main, header, footer {
-    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 1rem;
 }
 
 body {
     font-family: 'Michroma', sans-serif;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 /* Header / Nav */
