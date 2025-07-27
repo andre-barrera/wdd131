@@ -24,7 +24,9 @@ header{
 
 header h1{
   margin-bottom: 1rem;
+  margin-left: 1rem;
   align-items: center;
+  font-size: 2rem;
 }
 
 #menu {
