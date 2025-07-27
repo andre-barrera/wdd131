@@ -47,12 +47,11 @@ header h1{
   background-color: darkslategray;
 }
 
-nav ul.navigation.open {
+.navigation.open {
   display: flex;
 }
 
 nav{
-    background-color: darkslategray;
     margin: 0 1rem 1rem 1rem;
 }
 

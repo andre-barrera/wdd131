@@ -1,35 +1,37 @@
 @media screen and (min-width: 600px) {
 
 header, main, footer{
-    max-width: 100%;
+    min-width: 100%;
 }
 
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
 
-nav{
-    background-color: transparent;
+.navigation {
+  margin-top: 1rem;
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
-nav a{
-    font-size: 1.1rem;
-    max-width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-nav ul.navigation {
-    display: flex;      
-    flex-direction: row;
+header h1{
+  margin-bottom: 1rem;
+  align-items: center;
 }
 
 #menu {
 display: none;
 }
 
+/* Main */
 
 main {
     display: grid;
