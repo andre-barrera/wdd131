@@ -91,6 +91,7 @@ nav a:hover{
 
 #menu::before {
     content: "☰";
+    font-size: 1.8rem;
 }
 #menu.open::before {
     content: "❎";
