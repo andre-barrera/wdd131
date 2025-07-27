@@ -129,6 +129,8 @@ main h2 {
 .card{
     background-color: var(--cardColor);
     text-align: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .card h2{
