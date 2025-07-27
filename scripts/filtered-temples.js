@@ -167,7 +167,7 @@ templesFilter.forEach(element => {
     <p><strong>Dedicated: </strong>${element.dedicated}</p>
     <p><strong>Size: </strong>${element.area} sq ft</p>
 
-    <img src="${element.imageUrl}" alt="${element.templeName}" loading="lazy">`;
+    <img src="${element.imageUrl}" alt="${element.templeName}" loading="lazy" width="400px" height="250px">`;
     
     container.appendChild(card);    
 });
