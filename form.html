@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form-layout.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+<main>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" class="review-form">
+      
+      <label for="productName">Product Name</label>
+      <select name="productName" id="productName" required>
+        <option value="" disabled selected>Choose a Product</option>
+      </select>
+
+      <fieldset class="productRating">
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" value="1" required>★</label>
+        <label><input type="radio" name="rating" value="2">★★</label>
+        <label><input type="radio" name="rating" value="3">★★★</label>
+        <label><input type="radio" name="rating" value="4">★★★★</label>
+        <label><input type="radio" name="rating" value="5">★★★★★</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required />
+
+      <fieldset>
+        <legend>Which features did you find useful in the product? <br><small>(Check all that apply)</small></legend>
+        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" name="features" value="Design"> Design</label>
+      </fieldset>
+
+      <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
+      <textarea name="reviewText" id="reviewText" rows="4"></textarea>
+
+      <label for="username">Your Name <span class="username">(Optional)</span></label>
+      <input type="text" name="username" id="username"/>
+
+      <button type="submit" class="submitButton">Post Review</button>
+      </form>
+</main>
+<footer>
+    <p><span id="currentyear"></span> | Cesar Barrera | Guetemala</p>
+    <p><span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
