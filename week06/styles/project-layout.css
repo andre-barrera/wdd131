@@ -1,0 +1,244 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5E8C7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: #D4AF37;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #D4AF37;
+}
+
+/* Mobile Menu Button */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #D4AF37;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #D4AF37;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seasonal Flavor */
+.seasonal {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff7e0;
+}
+
+/* About Snippet */
+.about-snippet {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #D4AF37;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+  }
+}
+
+
+/* Menu Page */
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+}
+
+.menu-item {
+  background: #fff;
+  border: 2px solid #D4AF37;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.favorite-btn {
+  background: #D4AF37;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.favorite-btn:hover {
+  background: #b48b2a;
+}
+
+/* Favorites Section */
+#favorites-section {
+  background: #fff7e0;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+#favorites-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* About */ 
+
+/* About Page Gallery */
+.about-gallery {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 2rem 0;
+}
+
+.about-gallery figure {
+  background: #fff;
+  border: 2px solid #D4AF37;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.about-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+
+/* Contact */
+
+/* Contact Page Layout */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.contact-form {
+  margin-top: 2rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: #D4AF37;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #b8962f;
+}
+
+.hidden {
+  display: none;
+}

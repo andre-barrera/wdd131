@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Bella Gelateria - Menu</title>
+  <link rel="stylesheet" href="styles/project-layout.css">
+  <script src="scripts/menu.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/siteplan-logo.webp" alt="La Bella Gelateria Logo">
+    <h1>La Bella Gelateria</h1>
+  </div>
+  <nav>
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Visit Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Our Gelato Menu</h2>
+  <p>Freshly made daily with authentic Italian recipes.</p>
+
+  <!-- Menu Items Container -->
+  <section id="menu-container" class="menu-grid"></section>
+
+  <!-- Favorite Section -->
+  <section id="favorites-section">
+    <h2>My Favorite Flavors ❤️</h2>
+    <ul id="favorites-list"></ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="currentyear"></span> La Bella Gelateria | <a href="references.html">References</a></p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
