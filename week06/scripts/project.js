@@ -1,6 +1,48 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const heroImg = document.querySelector('.hero picture img');
+  const seasonalAnchor = document.getElementById('seasonal-space');
+  
+  const originalSrc = heroImg.src;
+  const seasonalSrc = 'images/gelato-hero.webp'; // set your seasonal image path here
+  
+  function checkScroll() {
+    const seasonalTop = seasonalAnchor.getBoundingClientRect().top;
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+    if (seasonalTop <= viewportHeight / 2) {
+      // Seasonal section is near middle of viewport or above - swap image
+      if (heroImg.src !== seasonalSrc) {
+        heroImg.src = seasonalSrc;
+      }
+    } else {
+      // Before seasonal section - revert to original image
+      if (heroImg.src !== originalSrc) {
+        heroImg.src = originalSrc;
+      }
+    }
+  }
+  
+  // Run on scroll
+  window.addEventListener('scroll', checkScroll);
+  
+  // Run once on page load
+  checkScroll();
+});
+
+
+
+
+
 // Dynamic year and last modified date
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+const year = document.querySelector('#currentyear');
+const lastModified = document.querySelector('#lastModified')
+
+const today = new Date();
+
+year.innerHTML = `&copy; ${today.getFullYear()}`;
+
+lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+
 
 // Mobile menu toggle
 const menuToggle = document.getElementById("menu-toggle");
@@ -14,7 +56,7 @@ menuToggle.addEventListener("click", () => {
 const seasonalFlavors = [
   { name: "Strawberry Cheesecake", desc: "Creamy cheesecake gelato with fresh strawberries." },
   { name: "Pistachio", desc: "Rich pistachio flavor from Sicilian nuts." },
-  { name: "Lemon Sorbet", desc: "Refreshing lemon sorbet made with fresh citrus." }
+  { name: "Chocolate Lemon Sorbet", desc: "Refreshing chocolate lemon sorbet made with fresh citrus." }
 ];
 
 const randomFlavor = seasonalFlavors[Math.floor(Math.random() * seasonalFlavors.length)];

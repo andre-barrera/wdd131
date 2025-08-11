@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 /* Reset & Base */
 body {
   margin: 0;
@@ -9,7 +13,7 @@ body {
 
 /* Header */
 header {
-  background-color: #000;
+  background-color: rgba(0,0,0,0.9);
   color: #D4AF37;
   display: flex;
   align-items: center;
@@ -23,19 +27,21 @@ header {
 }
 
 .logo img {
-  height: 50px;
-  margin-right: 10px;
+  height: 100px;
+  width: auto;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin-right: 2rem;
+  margin-bottom: 0;
   padding: 0;
 }
 
 nav ul li {
-  margin-left: 1rem;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
 }
 
 nav ul li a {
@@ -44,9 +50,19 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a.active {
-  border-bottom: 2px solid #D4AF37;
+nav ul li:hover {
+  background-color: #D4AF37;  
 }
+
+nav ul li:hover a {
+  color: black;           
+}
+
+nav ul li a, nav ul li {
+  transition: all 0.3s ease;
+}
+
+
 
 /* Mobile Menu Button */
 #menu-toggle {
@@ -59,9 +75,32 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
-  text-align: center;
+  position: relative;
+}
+
+.hero picture,
+.hero picture img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* behind content */
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
   padding: 2rem;
-  background-color: #fff;
+  color: #292824;
+  text-align: center;
+  margin-top: 15vh;
+  margin-left: 30vh;
+  margin-right: 30vh;
+  font-size: 2rem;
+  background: rgba(255,255,255,0.6);
+  margin-bottom: 20vh;
 }
 
 .hero .btn {
@@ -73,17 +112,82 @@ nav ul li a.active {
   font-weight: bold;
 }
 
+.blank {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* push children to right */
+  align-items: flex-end;  
+  padding: 1rem;
+  margin-bottom: 10vh;
+}
+
+
+
 /* Seasonal Flavor */
 .seasonal {
+  width: 30vw;
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  color: #292824;
   text-align: center;
-  padding: 2rem;
-  background-color: #fff7e0;
+  margin-bottom: 7vh;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.5);
+  align-self: flex-start;
 }
+
+.about-us .btn{
+  padding: 1rem;
+  background-color: #D4AF37;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 7vh;
+}
+
 
 /* About Snippet */
 .about-snippet {
+  width: 100vw;
+  height: 35vh;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  color: #292824;
   text-align: center;
-  padding: 2rem;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.8);
+  padding-bottom: 1rem;
+  display: flex;              /* enable flexbox */
+  flex-direction: column;     /* stack content vertically */
+  justify-content: center;    /* vertical center */
+  align-items: center;        /* horizontal center */
+  text-align: center; 
+}
+
+
+.about-snippet a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+  background-color: #D4AF37;
+  padding: 1rem;
+}
+
+.about-snippet h2{
+  font-size: 1.7rem;
+}
+
+.about-snippet a:hover {
+  background-color: black;  
+}
+
+.about-snippet a:hover{
+  color: #D4AF37;           
 }
 
 /* Footer */
