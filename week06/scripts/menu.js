@@ -1,8 +1,14 @@
-// ----- Common Footer Info -----
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
 
-// ----- Mobile Menu -----
+const year = document.querySelector('#currentyear');
+const lastModified = document.querySelector('#lastModified')
+
+const today = new Date();
+
+year.innerHTML = `&copy; ${today.getFullYear()}`;
+
+lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+
+//Mobile Menu
 const menuToggle = document.getElementById("menu-toggle");
 const navList = document.getElementById("nav-list");
 
@@ -10,7 +16,7 @@ menuToggle.addEventListener("click", () => {
   navList.classList.toggle("show");
 });
 
-// ----- Gelato Flavors Array -----
+//Gelato Flavors
 const gelatoMenu = [
   { name: "Pistachio", desc: "Rich Sicilian pistachios in a creamy base.", price: 3.50, img: "images/pistachio.jpg" },
   { name: "Stracciatella", desc: "Classic milk gelato with chocolate shavings.", price: 3.50, img: "images/stracciatella.jpg" },
@@ -20,7 +26,7 @@ const gelatoMenu = [
   { name: "Tiramisu", desc: "Coffee, cocoa, and mascarpone gelato.", price: 4.00, img: "images/tiramisu.jpg" }
 ];
 
-// ----- Display Menu Items -----
+// Display Menu Items
 const menuContainer = document.getElementById("menu-container");
 
 function displayMenu() {
@@ -36,19 +42,19 @@ function displayMenu() {
 }
 displayMenu();
 
-// ----- Favorites with localStorage -----
+
 const favoritesList = document.getElementById("favorites-list");
 
-// Load saved favorites
+
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-// Save favorites to localStorage
+
 function saveFavorites() {
   localStorage.setItem("favorites", JSON.stringify(favorites));
   displayFavorites();
 }
 
-// Display favorites
+
 function displayFavorites() {
   favoritesList.innerHTML = favorites.length
     ? favorites.map(fav => `<li>${fav}</li>`).join("")
@@ -56,7 +62,7 @@ function displayFavorites() {
 }
 displayFavorites();
 
-// Add favorite event
+// Add favorite
 menuContainer.addEventListener("click", e => {
   if (e.target.classList.contains("favorite-btn")) {
     const flavorName = e.target.getAttribute("data-name");
