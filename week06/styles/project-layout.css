@@ -11,6 +11,11 @@ body {
   line-height: 1.6;
 }
 
+main{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 /* Header */
 header {
   background-color: rgba(0,0,0,0.9);
@@ -83,7 +88,7 @@ nav ul li a, nav ul li {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   z-index: -1; /* behind content */
@@ -151,7 +156,7 @@ nav ul li a, nav ul li {
 
 /* About Snippet */
 .about-snippet {
-  width: 100vw;
+  width: 100%;
   height: 35vh;
   position: relative;
   z-index: 2;
@@ -245,7 +250,7 @@ footer {
     font-size: 1.2rem;
     padding: 1rem;
     margin-bottom: 50vh;
-    margin-top: 20vh;
+    margin-top: 15vh;
   }
 
   .hero picture img {
@@ -278,6 +283,11 @@ footer {
   footer {
     font-size: 0.9rem;
     padding: 0.5rem;
+  }
+
+  main{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 
@@ -377,6 +387,9 @@ footer {
 
 .contact-form {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-width: 50vw;
+  justify-self: center;
 }
 
 .contact-form form {

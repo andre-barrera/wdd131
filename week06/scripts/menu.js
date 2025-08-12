@@ -12,12 +12,12 @@ menuToggle.addEventListener("click", () => {
 
 // ----- Gelato Flavors Array -----
 const gelatoMenu = [
-  { name: "Pistachio", desc: "Rich Sicilian pistachios in a creamy base.", price: 3.50, img: "images/pistachio.webp" },
-  { name: "Stracciatella", desc: "Classic milk gelato with chocolate shavings.", price: 3.50, img: "images/stracciatella.webp" },
-  { name: "Mango Sorbet", desc: "Refreshing tropical mango sorbet.", price: 3.00, img: "images/mango.webp" },
-  { name: "Hazelnut", desc: "Nutty hazelnut perfection.", price: 3.50, img: "images/hazelnut.webp" },
-  { name: "Lemon Sorbet", desc: "Zesty and refreshing lemon sorbet.", price: 3.00, img: "images/lemon.webp" },
-  { name: "Tiramisu", desc: "Coffee, cocoa, and mascarpone gelato.", price: 4.00, img: "images/tiramisu.webp" }
+  { name: "Pistachio", desc: "Rich Sicilian pistachios in a creamy base.", price: 3.50, img: "images/pistachio.jpg" },
+  { name: "Stracciatella", desc: "Classic milk gelato with chocolate shavings.", price: 3.50, img: "images/stracciatella.jpg" },
+  { name: "Mango Sorbet", desc: "Refreshing tropical mango sorbet.", price: 3.00, img: "images/mango.jpg" },
+  { name: "Hazelnut", desc: "Nutty hazelnut perfection.", price: 3.50, img: "images/hazelnut.jpg" },
+  { name: "Lemon Sorbet", desc: "Zesty and refreshing lemon sorbet.", price: 3.00, img: "images/lemon.jpg" },
+  { name: "Tiramisu", desc: "Coffee, cocoa, and mascarpone gelato.", price: 4.00, img: "images/tiramisu.jpg" }
 ];
 
 // ----- Display Menu Items -----
